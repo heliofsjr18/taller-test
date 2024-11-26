@@ -1,0 +1,25 @@
+### GET /tasks
+
+GET http://localhost:3000/tasks HTTP/1.1
+
+### POST /tasks
+
+POST http://localhost:3000/task HTTP/1.1
+Content-Type: application/json
+
+{
+  "title": "Task 1",
+  "completed": false
+}
+
+### PUT /tasks/:id (Updating Task with ID = 1)
+
+PUT http://localhost:3000/tasks/1 HTTP/1.1
+Content-Type: application/json
+{
+  "completed": true
+}
+
+### DELETE /tasks/:id (Deleting Task with ID = 1)
+
+DELETE http://localhost:3000/tasks/1 HTTP/1.1
